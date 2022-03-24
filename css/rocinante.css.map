@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "rocinante.css",
-	"sourceRoot": "/Users/haoxingdu/haoxing-blog",
+	"sourceRoot": "/Users/haoxingdu/haoxing-web",
 	"sources": [
 		"themes/rocinante/assets/css/rocinante.scss",
 		"themes/rocinante/assets/css/includes.scss"
