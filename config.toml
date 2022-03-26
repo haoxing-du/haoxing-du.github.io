@@ -4,6 +4,7 @@ title = "Haoxing Du"
 theme = "rocinante"
 paginate = 3
 summaryLength = 0
+publishDir = "docs"
 
 [markup]
   [markup.highlight]
