@@ -1,0 +1,39 @@
+baseURL = "https://www.haoxingdu.com"
+languageCode = "en-us"
+title = "Haoxing Du"
+theme = "rocinante"
+paginate = 3
+summaryLength = 0
+
+[markup]
+  [markup.highlight]
+    style = "monokailight"
+    tabWidth = 2
+  [markup.goldmark.renderer]
+    unsafe= true
+
+[author]
+  name = "Haoxing Du"
+
+[params]
+  mainSections = ["post"]
+  email = "haoxingdu@gmail.com"
+  favicon = "/icon/stabilizer3.jpeg"
+  about = """
+Hi! I'm **Haoxing**. I'm a PhD student in theoretical physics at the University of California, Berkeley. 
+Prior to Berkeley, I was fortunate to be part of the [Perimeter Scholars International](https://perimeterinstitute.ca/psi-masters-program) program, and studied at [Harvey Mudd College](https://www.hmc.edu).
+
+This is a blog in which I attempt to write about topics in the foundations of quantum theory.
+
+"""
+
+  [[params.links]]
+    [[params.links.link]]
+      name = "Email"
+      href = "/contact"
+      smart_email_link = true
+
+    [[params.links.link]]
+      name = "Google Scholar"
+      href = "https://scholar.google.com/citations?user=teOq000AAAAJ&hl=en"
+      smart_email_link = false
