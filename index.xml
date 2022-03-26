@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Haoxing Du</title>
-    <link>https://www.haoxing-du.github.io/</link>
+    <link>https://www.haoxingdu.com/</link>
     <description>Recent content on Haoxing Du</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.haoxing-du.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.haoxingdu.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why I am not an Everettian</title>
-      <link>https://www.haoxing-du.github.io/post/mw/</link>
+      <link>https://www.haoxingdu.com/post/mw/</link>
       <pubDate>Tue, 22 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.haoxing-du.github.io/post/mw/</guid>
+      <guid>https://www.haoxingdu.com/post/mw/</guid>
       <description>The many worlds interpretation seems to come up on top as the favored quantum interpretation among my friends.</description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>https://www.haoxing-du.github.io/contact/</link>
+      <link>https://www.haoxingdu.com/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.haoxing-du.github.io/contact/</guid>
+      <guid>https://www.haoxingdu.com/contact/</guid>
       <description>You can reach me by Email at haoxingdu[at]gmail.</description>
     </item>
     
