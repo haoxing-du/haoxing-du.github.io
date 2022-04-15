@@ -7,7 +7,7 @@ mathjax: true
 
 What is your favorite quantum phenomenon? Entanglement? The existence of a teleportation protocol? How about the weirdest, "quantumest" quantum phenomenon? Non-commutativity of measurements? Interference? The no-cloning theorem?
 
-Now, suppose that there is a theory distinct from quantum theory that contains all of the above "quantum" phenomena, plus maybe a dozen more. Let's call this theory Theory X. It really looks like it is just a tad "less quantum" than quantum theory itself, in the sense that Theory X contains a long list of phenomena that feature in quantum theory that do not appear in classical theories, while failing to reproduce only a few quantum phenomena. It essentially sorts quantum phenomenology into a "weakly nonclassical" and a "strongly nonclassical" bucket, by the following table:
+Now, suppose that there is a theory that contains all of the above "quantum" phenomena, plus maybe a dozen more. Let's call this theory Theory X. It is clear that Theory X is different from quantum theory. It really looks like it is just a tad "less quantum" than quantum theory itself, in the sense that Theory X contains a long list of phenomena that feature in quantum theory that do not appear in classical theories, while failing to reproduce only a few quantum phenomena. It essentially sorts quantum phenomenology into a "weakly nonclassical" and a "strongly nonclassical" bucket, by the following table:
 
 [Table ]
 
