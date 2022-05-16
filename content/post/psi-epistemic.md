@@ -68,7 +68,14 @@ With this distinction between ontic and epistemic things, we are now ready to as
 
 ## Priors
 
-Any textbook on quantum mechanics would tell you that the quantum state is ontic. In fact, it probably doesn't tell you that literally. No textbook on quantum mechanics mentions the distinction between ontic and epistemic quantities to my knowledge. Instead,  quantum mechanics courses 
+One would have some trouble finding an answer to this question in a traditional textbook on quantum mechanics. To my knowledge, no textbook on quantum mechanics even discusses the distinction between ontic and epistemic quantities. Instead, courses in quantum mechanics oftentimes start with this axiom: 
+> A state is a _complete description_ of a physical system. In quantum mechanics, a state is a ray in a Hilbert space. 
+
+(Taken from John Preskill's [lecture notes](http://theory.caltech.edu/~preskill/ph219/chap2_15.pdf) on quantum information. Emphasis mine.)
+
+At face value, this does not seem to tell us whether the quantum state is ontic or epistemic. However, with one extra logical step, we see that this means that the quantum state must be ontic: if the quantum state were epistemic, then it must be possible for two different quantum states to describe the same state of reality. But if the quantum state is a "complete description of a physical system", then different quantum states must correspond to different realities.
+
+If one were to look at the major interpretations of quantum theory, it would seem like they have all taken the quantum state as ontic. In the de Broglie-Bohm interpretation, the ontology is posited to be the quantum state, together with some additional "hidden variables" that are the positions of the particle. In the many worlds interpretation, which is the subject of my last blog post, the quantum state is furthermore 
 
 ## Spekkens toy model
 
