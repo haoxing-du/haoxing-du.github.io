@@ -109,7 +109,7 @@ A "toy bit", the smallest building block in this model, can be in four possible 
 <img src="/images/psi-epi/ontic-states.jpeg" alt="ontic states" width="450"/>
 </center>
 
-The crucial ingredient of the theory is an *epistemic restriction*---a fundamental limit on the amount of knowledge that any agent can learn about a system. For a toy bit, it is posited that the most that an agent can know about its state is to narrow down its ontic state to one of two possibilities. This gives rise to the notion of an epistemic state, a state of knowledge by some agent. An epistemic state is denoted by a pattern of shade on the 2x2 box. For example, the picture on the left is a possible epistemic state, which means that the ontic state is known to be one of the two possibilities on the right.
+The crucial ingredient of the theory is an *epistemic restriction*---a fundamental limit on the amount of knowledge that any agent can learn about a system. For a toy bit, it is posited that the most that an agent can know about its ontic state is to narrow it down to one of two possibilities. This gives rise to the notion of an epistemic state, a state of knowledge by some agent. An epistemic state is denoted by a pattern of shade on the 2x2 box. For example, the picture on the left is a possible epistemic state, which means that the ontic state is known to be one of the two possibilities on the right.
 
 <center>
 <img src="/images/psi-epi/epi-ontic-ex.jpeg" alt="example of epistemic/ontic" width="280"/>
@@ -121,11 +121,13 @@ The epistemic restriction means that there are only seven permitted epistemic st
 <img src="/images/psi-epi/all-epis.jpeg" alt="all epistemic states" width="400"/>
 </center>
 
-For this to be a complete theory, we need to know how a toy bit evolves, and how it behaves when measurements are made on it. We won't go into the details, but in order to preserve the epistemic restriction, it turns out that the only permitted measurements are *permutations* of ontic states. This means that we can only shuffle the four ontic states around. For example, this is a series of valid transformations, and their effects on an epistemic state.
+For this to be a complete theory, we need to know how a toy bit evolves, and how it behaves when undergoing measurements. We won't go into the details, but in order to preserve the epistemic restriction, it turns out that the only permitted transformations are *permutations* of ontic states. This means that we can only shuffle the four ontic states around. For example, this is a series of valid transformations, and their effects on an epistemic state.
 
 <center>
 <img src="/images/psi-epi/transf-ex.jpeg" alt="examples of transformations" width="550"/>
 </center>
+
+When a measurement is made on a toy bit, it also is not allowed to violate the epistemic restriction. This means that one is not allowed to ask questions such as, "which ontic state is the toy bit in?" In fact, all allowed measurements are of the form, "which of the two regions is the ontic state in?"
 
 Now, Spekkens' toy model is distinctively not quantum theory, as in it makes different operational predictions from quantum theory. But it comes really close to quantum theory in the sense that it contains a long list of phenomena that feature in quantum theory that are normally considered nonclassical, while failing to reproduce only a few quantum phenomena. It essentially sorts quantum phenomenology into a "weakly nonclassical" and a "strongly nonclassical" bucket, by the following table:
 
