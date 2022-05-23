@@ -79,33 +79,76 @@ Given this, it might appear that the ontic status of the quantum state is the ov
 
 The tension between $\psi$-onticity and locality is not at all subtle, and arguments pointing out this conflict have a long history. Einstein is perhaps the first and most prominent figure to make this point. It is well-known that Einstein was troubled by the $\psi$-complete position, and it is widely accepted that he had attempted to construct a hidden variable model of his own. [This article](https://arxiv.org/abs/0706.2661) analyzes various arguments by Einstein, and argues that he not only argued against $\psi$-completeness, but in fact favored a $\psi$-epistemic interpretation.
 
-Regardless of history, the simplest way to see this tension is through the phenomenon of steering. Suppose that Alice and Bob shared a pair of qubits (say, the spin of some particle) in the maximally entangled state, $$\ket{\psi^-} = \frac{\ket{\uparrow}\ket{\downarrow} - \ket{\downarrow}\ket{\uparrow}}{\sqrt{2}}.$$ Quantum theory predicts the following: If Alice measures her qubit in the {$\ket{\uparrow}, \ket{\downarrow}$} basis, then she would get outcome $\uparrow$ and $\downarrow$ with 50-50 probability. If she gets outcome $\uparrow$, then the quantum state of her qubit is immediately updated to $\ket{\uparrow}$, and the quantum state of Bob's qubit is immediately updated to $\ket{\downarrow}$, and that means that Bob is guaranteed to get the outcome $\downarrow$ if he measures his qubit in the $\{ \ket{\uparrow}, \ket{\downarrow} \}$ basis. Suppose that Alice instead chooses to measure her qubit in another basis, say, the basis {$\ket{+\hat{n}}, \ket{-\hat{n}}$}, where $\ket{+\hat{n}}$ points angle $\theta$ away from the $\uparrow$ direction, and $\ket{-\hat{n}}$ points the opposite direction from $\ket{+\hat{n}}$. Now, she would still get outcome $+\hat{n}$ and $-\hat{n}$ with 50-50 odds, and if she got outcome $+\hat{n}$, that would update the quantum state of her qubit to $\ket{+\hat{n}}$, and that of Bob's qubit to $\ket{-\hat{n}}$, guaranteeing that he gets the $-\hat{n}$ outcome when measuring his qubit in the same basis. In other words, Alice and Bob would always find their spins in opposite directions.
+Without getting into the historical details, I will present here the simplest way to see this tension---through the phenomenon of steering. Suppose that Alice and Bob shared a pair of qubits (say, the spin of some particle) in the maximally entangled state, $$\ket{\psi^-} = \frac{\ket{\uparrow}\ket{\downarrow} - \ket{\downarrow}\ket{\uparrow}}{\sqrt{2}}.$$ 
+This state is called the singlet, and it has the property that no matter what direction Alice chooses to measure her spin in, Bob is guaranteed to find his spin in the opposite direction. 
 
-Now, the above analysis holds no matter how far apart Alice and Bob are separated. Quantum theory predicts that Alice's measurement on her qubit *instantaneously* changes the state of Bob's qubit, even when they are on opposite sides of the galaxy. In particular, by choosing to measure her qubit in the {$\ket{\uparrow}, \ket{\downarrow}$} basis, Alice can make Bob's qubit to be in either state $\ket{\uparrow}$ or state $\ket{\downarrow}$, whereas by measuring her qubit in the {$\ket{+\hat{n}}, \ket{-\hat{n}}$} basis, she makes Bob's qubit be in one of $\ket{+\hat{n}}$ and $\ket{-\hat{n}}$ instead. This is already very problematic if one believes that the quantum state is a state of reality---this means that Alice's action can instantaneously influence the reality lightyears away. This phenomenon is precisely what Einstein termed "spooky action at a distance" [^saad].
+In a bit more detail, it works like this: If Alice measures her qubit in the {$\ket{\uparrow}, \ket{\downarrow}$} basis, quantum theory predicts that she would get outcome $\uparrow$ and $\downarrow$ with 50-50 probability. If she gets outcome $\uparrow$, then the quantum state of her qubit is immediately updated to $\ket{\uparrow}$, and the quantum state of Bob's qubit is immediately updated to $\ket{\downarrow}$, and that means that Bob is guaranteed to get the outcome $\downarrow$ if he measures his qubit in the $\{ \ket{\uparrow}, \ket{\downarrow} \}$ basis. Suppose that Alice instead chooses to measure her qubit in another basis, say, the basis {$\ket{+\hat{n}}, \ket{-\hat{n}}$}, where $\ket{+\hat{n}}$ points angle $\theta$ away from the $\uparrow$ direction, and $\ket{-\hat{n}}$ points the opposite direction from $\ket{+\hat{n}}$. Since the singlet can be equivalently rewritten as $$\ket{\psi^-} = \frac{\ket{+\hat{n}}\ket{-\hat{n}} - \ket{-\hat{n}}\ket{+\hat{n}}}{\sqrt{2}},$$ she would still get outcome $+\hat{n}$ and $-\hat{n}$ with 50-50 odds. And if she got outcome $+\hat{n}$, that would update the quantum state of her qubit to $\ket{+\hat{n}}$, and that of Bob's qubit to $\ket{-\hat{n}}$, guaranteeing that he gets the $-\hat{n}$ outcome when measuring his qubit in the same basis. This way, Alice and Bob would always find their spins in opposite directions.
 
-[^saad]: Note that the usual analysis in a quantum mechanics textbook is that despite 
+To bring locality into the picture, now note that the above analysis holds no matter how far apart Alice and Bob are separated. Quantum theory predicts that Alice's measurement on her qubit *instantaneously* changes the state of Bob's qubit, even when they are on opposite sides of the galaxy. In particular, by choosing to measure her qubit in the {$\ket{\uparrow}, \ket{\downarrow}$} basis, Alice can make Bob's qubit to be in either state $\ket{\uparrow}$ or state $\ket{\downarrow}$, whereas by measuring her qubit in the {$\ket{+\hat{n}}, \ket{-\hat{n}}$} basis, she makes Bob's qubit be in one of $\ket{+\hat{n}}$ and $\ket{-\hat{n}}$ instead. This is already very problematic if one believes that the quantum state is a state of reality---this means that Alice's action can instantaneously influence the reality lightyears away. This phenomenon is precisely what Einstein termed "spooky action at a distance" [^saad].
+
+[^saad]: Note that the usual analysis in a quantum mechanics textbook points out that despite the instantaneous update, Alice and Bob cannot use this to send each other information instantaneously. This is true, but is besides the point. The failure to communicate does not absolve $\psi$-onticity of implying superluminal influences.
+
+If one takes the perspective that quantum states are states of knowledge, i.e. are epistemic, however, then they would not find the steering phenomenon troubling at all. The instantaneous update on the quantum state of Bob's qubit is simply a Bayesian update that Alice performs on her state of knowledge about Bob's qubit, and no superluminal physical influences are needed. That the quantum state must be a state knowledge is in fact the most natural lesson to draw from the steering phenomenon.
+
+Unfortunately, the story is not so simple. Since Bell published his seminal [1964 paper](https://cds.cern.ch/record/111654/files/vol1p195-200_001.pdf), we now know that locality nevertheless fails even if quantum states are regarded as epistemic. The failure comes from the fact that an explanation with epistemic quantum states still need to explain the correlation of Alice's and Bob's measurement results (*always* anticorrelated, in the case of the singlet). Bell's theorem tells us that even if quantum states are regarded as epistemic, there can be no locally causal account of what quantum theory predicts. (Bell's theorem is the planned topic of my next post!) Nonetheless, the problem with locality is so obvious if the quantum state is ontic that we would not have needed the "big guns" of Bell's theorem. 
+
+So what other aspects of quantum theory favor a $\psi$-epistemic interpretation over a $\psi$-ontic one? Turns out, it's most of quantum theory.
 
 
 ## Spekkens toy model
 
 What is your favorite quantum phenomenon? Entanglement? The existence of a teleportation protocol? How about the weirdest, "quantumest" quantum phenomenon? Non-commutativity of measurements? Interference? The no-cloning theorem?
 
-Now, suppose that there is a theory that contains all of the above "quantum" phenomena, plus maybe a dozen more. Let's call this theory Theory X. It is clear that Theory X is different from quantum theory. It really looks like it is just a tad "less quantum" than quantum theory itself, in the sense that Theory X contains a long list of phenomena that feature in quantum theory that do not appear in classical theories, while failing to reproduce only a few quantum phenomena. It essentially sorts quantum phenomenology into a "weakly nonclassical" and a "strongly nonclassical" bucket, by the following table:
+Let me now present to you a classical model that contains all of the above "quantum" phenomena. This model is astoundingly simple, and one basically just needs two ingredients to come up with it: One, identify quantum states as states of knowledge about some underlying ontic states. Two, impose a fundamental restriction on the *amount* of information that can be known. Do this with a discrete ontic state space, and you get [Spekkens' toy theory](https://arxiv.org/abs/quant-ph/0401052) [^cont].
+
+[^cont]: This can be done for continuous ontic state spaces as well! Imposing the same epistemic restriction on a continuous phase space just yields a subtheory of continuous quantum mechanics, called Gaussian quantum mechanics.
+
+A "toy bit", the smallest building block in this model, can be in four possible ontic states. In other words, the *ontic state space* of a toy bit contains four ontic states. To describe this theory, it turns out that a graphical notation is most convenient. A toy bit is usually denoted as a 2x2 box, and these are the four possible ontic states of a toy bit:
+
+<center>
+<img src="/images/psi-epi/ontic-states.jpeg" alt="ontic states" width="450"/>
+</center>
+
+The crucial ingredient of the theory is an *epistemic restriction*---a fundamental limit on the amount of knowledge that any agent can learn about a system. For a toy bit, it is posited that the most that an agent can know about its state is to narrow down its ontic state to one of two possibilities. This gives rise to the notion of an epistemic state, a state of knowledge by some agent. An epistemic state is denoted by a pattern of shade on the 2x2 box. For example, the picture on the left is a possible epistemic state, which means that the ontic state is known to be one of the two possibilities on the right.
+
+<center>
+<img src="/images/psi-epi/epi-ontic-ex.jpeg" alt="example of epistemic/ontic" width="280"/>
+</center>
+
+The epistemic restriction means that there are only seven permitted epistemic states for a toy bit, as shown below. It is also okay to know nothing about a toy bit.
+
+<center>
+<img src="/images/psi-epi/all-epis.jpeg" alt="all epistemic states" width="400"/>
+</center>
+
+For this to be a complete theory, we need to know how a toy bit evolves, and how it behaves when measurements are made on it. We won't go into the details, but in order to preserve the epistemic restriction, it turns out that the only permitted measurements are *permutations* of ontic states. This means that we can only shuffle the four ontic states around. For example, this is a series of valid transformations, and their effects on an epistemic state.
+
+<center>
+<img src="/images/psi-epi/transf-ex.jpeg" alt="examples of transformations" width="550"/>
+</center>
+
+Now, Spekkens' toy model is distinctively not quantum theory, as in it makes different operational predictions from quantum theory. But it comes really close to quantum theory in the sense that it contains a long list of phenomena that feature in quantum theory that are normally considered nonclassical, while failing to reproduce only a few quantum phenomena. It essentially sorts quantum phenomenology into a "weakly nonclassical" and a "strongly nonclassical" bucket, by the following table:
 
 [Table ]
+
+
+
 
 Presented with such a theory, any quantum-foundations-enthusiast must be thrilled. Since Theory X reproduces so many features that are regarded as quantum, Theory X must be very similar to quantum theory in certain aspects. It must capture the essence of quantum theory in some sense. One must take Theory X seriously and ask what are the lessons we might learn from it about the interpretation of quantum theory. We should teach it to every undergrad learning quantum mechanics for the first time, to really make clear which aspects of quantum theory are quintessentially quantum. [^undergrad]
 
 [^undergrad]: Of course, we currently do no such thing. Instead, undergrads learn quotes such as the one from [Feynman](https://www.feynmanlectures.caltech.edu/III_01.html) on how interference phenomena "contains the _only_ mystery [of quantum mechanics]", when it is clear how interference can be [understood](https://arxiv.org/abs/2111.13727) in a framework similar to the one discussed here. Or worse, we teach undergrad physics majors that there is nothing left to be figured out in the foundations of quantum mechanics, and we just need to Shut Up And Calculate.
 
-In this blog post, I present to you Theory X, more commonly referred to as [Spekkens' toy theory](https://arxiv.org/abs/quant-ph/0401052). The core idea behind the theory is simply imposing a fundamental limit on the amount of knowledge any agent can have about a system, and consider the behavior of states corresponding to the knowledge of such agents. I will argue that the unequivocal lesson that we must learn from Spekkens' toy theory is that, the best way to understand a large domain of quantum phenomenology is to understand it as a theory of information. To me, the existence of such a toy theory is an unequivocal piece of evidence showing that the quantum state is a state of knowledge, rather than a state of reality.
-
-
-(Much of this post is based on Rob Spekkens’ excellent public lecture at the Perimeter Institute, [The riddle of the quantum sphinx](https://pirsa.org/18020008). If you are someone that enjoys lectures, feel free to check it out!)
+To me, this is the single most suggestive piece evidence about the nature of the quantum state. So much of the quantum phenomelogy is captured by Spekkens' toy model, and the most natural explanation for that is because much of quantum theory *is* the theory of information. To me, the existence of such a toy theory is an unequivocal piece of evidence showing that the quantum state is a state of knowledge, rather than a state of reality.
 
 
 ## Concluding thoughts
 
+You might be tired of the analogy with the Egyptian hieroglyphs by now, but I just want to flesh out the analogy a bit further and make it completely explicit. In the case of the decipherment of the hieroglyphs, the incorrect assumption that the hieroglyphs are ideographic hindered progress for a millennium. 
+
 Bell
 
 All this to say, it is not that I think the $\psi$-epistemic position must be correct. From a rational perspective, it is just surprising how essentially all interpretational effort has been put into the $\psi$-ontic basket, whereas there is very good evidence that the $\psi$-epistemic approach is worth investigating, and possibly has more potential. I also think that now any satisfactory interpretation of quantum theory, especially ones that take the $\psi$-ontic approach, must pass the bar of explaining why the quantum state behaves so much like a state of knowledge. 
+ 
+---
+
+(Much of this post is based on Rob Spekkens’ excellent public lecture at the Perimeter Institute, [The riddle of the quantum sphinx](https://pirsa.org/18020008). If you are someone that enjoys lectures, feel free to check it out!)
