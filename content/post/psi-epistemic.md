@@ -1,6 +1,6 @@
 ---
-title:  The quantum state is a state of knowledge
-date: 2022-04-21
+title:  Is the quantum state a state of knowledge?
+date: 2022-05-23
 tags: ["psi-epistemic"]
 mathjax: true
 ---
@@ -95,7 +95,7 @@ Unfortunately, the story is not so simple. Since Bell published his seminal [196
 So what other aspects of quantum theory favor a $\psi$-epistemic interpretation over a $\psi$-ontic one? Turns out, it's most of quantum theory.
 
 
-## Spekkens toy model
+## Spekkens' toy model
 
 What is your favorite quantum phenomenon? Entanglement? The existence of a teleportation protocol? How about the weirdest, "quantumest" quantum phenomenon? Non-commutativity of measurements? Interference? The no-cloning theorem?
 
@@ -127,13 +127,47 @@ For this to be a complete theory, we need to know how a toy bit evolves, and how
 <img src="/images/psi-epi/transf-ex.jpeg" alt="examples of transformations" width="550"/>
 </center>
 
-When a measurement is made on a toy bit, it also is not allowed to violate the epistemic restriction. This means that one is not allowed to ask questions such as, "which ontic state is the toy bit in?" In fact, all allowed measurements are of the form, "which of the two regions is the ontic state in?"
+When a measurement is made on a toy bit, it also is not allowed to violate the epistemic restriction. This means that one is not allowed to ask which ontic state the toy bit is in. In fact, all allowed measurements are of the form, "which of the two regions is the ontic state in?" In other words, a measurement can only reveal one bit of information. Furthermore, the measurement outcome is deterministically decided by the *ontic* state that the toy bit is in. For example, in the below example, the measurement on the left gives outcome 1 deterministically, because it is only possible for the ontic state to be in the top half for the epistemic state that we started with.
+For the measurement on the right, which asks whether the ontic state is in the left or right half, both outcomes are possible. The epistemic state in the middle implies that the ontic state is top-left or top-right with equal probability. The outcome of the measurement would be 1 (left half) if the ontic state were TL, and the outcome would be 2 (right half) if the ontic state were TR. However, since it is not possible to know where or not the ontic state was TL or TR to start with, what is observed given this initial epistemic state is that the measurement yields outcomes 1 and 2 with equal probability.
 
-Now, Spekkens' toy model is distinctively not quantum theory, as in it makes different operational predictions from quantum theory. But it comes really close to quantum theory in the sense that it contains a long list of phenomena that feature in quantum theory that are normally considered nonclassical, while failing to reproduce only a few quantum phenomena. It essentially sorts quantum phenomenology into a "weakly nonclassical" and a "strongly nonclassical" bucket, by the following table:
+<center>
+<img src="/images/psi-epi/meas-ex.jpeg" alt="examples of measurements" width="600"/>
+</center>
 
-[Table ]
+To complete the description of measurements, one final step is needed. For the measurement on the right, note that the measurement result reveals the exact ontic state of the toy bit: TL for outcome 1, and TR for outcome 2. If nothing else happens, then we would have learned more than what is allowed by the epistemic restriction. To preserve the epistemic restriction, then, measurements will necessarily introduce a disturbance, and reshuffle the ontic states within each of the two regions. For the measurement on the right, this updates the epistemic state of the toy bit post-measurement, whereas the epistemic state is left unchanged for the measurement on the left.
 
+<center>
+<img src="/images/psi-epi/update.jpeg" alt="examples of post-measurement update" width="800"/>
+</center>
 
+This is essentially all one needs to define Spekkens' toy model. As it turns out, this is also all one needs to reproduce a large part of quantum theory. To make the connection with quantum theory, we just need to identify the allowed epistemic states on a toy bit with quantum states as the following:
+
+<center>
+<img src="/images/psi-epi/bloch.jpeg" alt="the Bloch sphere" width="500"/>
+</center>
+
+(In case you are not familiar with this picture, I'm drawing a [Bloch sphere](https://en.wikipedia.org/wiki/Bloch_sphere), which is a common way to visualize the state space of a qubit.)
+
+Now, this toy theory is distinctively *not* the same as quantum theory. Roughly speaking, while quantum theory corresponds to the whole Bloch ball (meaning surface + interior), the toy theory only corresponds to the octahedron formed by connecting the six labeled points on the Bloch sphere, called the *stabilizer subtheory* of quantum theory. [^stab] But the toy theory comes extremely close to quantum theory in the sense that it contains a long list of phenomena that feature in quantum theory that are normally considered nonclassical, while failing to reproduce only a few quantum phenomena. It essentially sorts quantum phenomenology into two buckets, by the following table:
+
+[^stab]: This is technically a little bit wrong. It turns out that the theory of a toy bit is subtly different from the stabilizer subtheory of a qubit, but [Catani and Browne](https://iopscience.iop.org/article/10.1088/1367-2630/aa781c/pdf) has shown that the correspondance is exact for systems of all odd dimensions. This has to do with the fact that the qubit stabilizer subtheory is *contextual*. Contextuality is also on the list of the topics I have planned for the next few blog posts, so stay tuned if you are interested in this point!
+
+| appears in toy theory            | does not appear in toy theory          |
+| :------------------------------: | :------------------------------------: |
+| noncommutativity of measurements | Bell inequality violations             |
+| collapse                         | noncontextuality inequality violations |
+| coherent superposition           | computational speedup                  |
+| no-cloning                       | certain aspects of items on the left   |
+| interference                     |                                        |
+| ambiguity of mixtures            |                                        |
+| entanglement                     |                                        |
+| steering                         |                                        |
+| teleportation                    |                                        |
+| and some more ...                |                                        |
+
+For example, one can already see how the noncommutativity of measurements arises from the post-measurement update process described above. It is also clear that wavefunction collapse, which is truly pretty bizarre if one thinks the wavefunction is ontic, is nothing else than an epistemic update upon learning new information after a measurement. I won't be going into the details of how any other phenomenon arises in the toy theory here in this post; if you are curious about a particular phenomenon on this list, you can find the discussion in Spekkens' original [paper](https://arxiv.org/abs/quant-ph/0401052).
+
+This in turn provides us with a new way to assess the nonclassicality of any seemingly strange phenomenology. For one, this clarifies that there are at least two varieties of nonclassical phenomena: those that arise from a classical theory with an epistemic restriction, and those that cannot be reproduced in such a theory. To me, it was a big shock when I learned about this that the first list is so long, and the second so short. This also helps us focus our effort on tackling the phenomena on the second list ...
 
 
 Presented with such a theory, any quantum-foundations-enthusiast must be thrilled. Since Theory X reproduces so many features that are regarded as quantum, Theory X must be very similar to quantum theory in certain aspects. It must capture the essence of quantum theory in some sense. One must take Theory X seriously and ask what are the lessons we might learn from it about the interpretation of quantum theory. We should teach it to every undergrad learning quantum mechanics for the first time, to really make clear which aspects of quantum theory are quintessentially quantum. [^undergrad]
