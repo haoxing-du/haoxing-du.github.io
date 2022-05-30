@@ -105,6 +105,8 @@ Let me now present to you a classical model that contains all of the above "quan
 
 [^cont]: This can be done for continuous ontic state spaces as well! Imposing the same epistemic restriction on a continuous phase space just yields a subtheory of continuous quantum mechanics, called Gaussian quantum mechanics.
 
+### One toy bit
+
 A "toy bit", the smallest fundamental system in this model, can be in four possible ontic states. In other words, the *ontic state space* of a toy bit contains four ontic states. To describe this theory, it turns out that a graphical notation is most convenient. A toy bit is usually represented as a 2x2 box, and these are the four possible ontic states of a toy bit:
 
 <center>
@@ -141,7 +143,9 @@ To complete the description of measurements, one final step is needed. For the m
 <img src="/images/psi-epi/update.jpeg" alt="examples of post-measurement update" width="800"/>
 </center>
 
-This is essentially all one needs to define Spekkens' toy model. As it turns out, this is also all one needs to reproduce a large part of quantum theory. To make the connection with quantum theory, we just need to identify the allowed epistemic states on a toy bit with quantum states as the following:
+Hopefully, you can already see the shadows of some familiar quantum phenomenology. Remember, quantum states are analogous to the epistemic states in this theory. For example, it is clear that wavefunction collapse, which is a truly pretty problematic process if one thinks the wavefunction is ontic, is nothing more than the epistemic update upon learning new information after a measurement (and the disturbance it introduces). It is also easy to see that the two measurements discussed in the example above don't commute: doing the left measurement first deterministically yields outcome 1, whereas if it is done after the right measurement, both outcomes are 50-50. This looks an awful lot like the basic behavior in Stern-Gerlach experiments: measuring the spin along the $z$-axis does not commute with measuring it along the $x$-axis. 
+
+Indeed, to make the connection with quantum theory, we just need to identify the allowed epistemic states on a toy bit with quantum states as the following:
 
 <center>
 <img src="/images/psi-epi/bloch.jpeg" alt="the Bloch sphere" width="500"/>
@@ -149,9 +153,38 @@ This is essentially all one needs to define Spekkens' toy model. As it turns out
 
 (In case you are not familiar with this picture, I'm drawing a [Bloch sphere](https://en.wikipedia.org/wiki/Bloch_sphere), which is a common way to visualize the state space of a qubit.)
 
+However, many interesting quantum phenomena only occur when more than one system is considered, such as entanglement and teleportation. Let us now focus our attention on how the toy theory describes two toy bits---the smallest composite system. We will see that the phenomenology here also closely mirrors that of quantum theory.
+
+
+### Two toy bits
+
+Since each toy bit has four ontic states, a pair of toy bits has sixteen ontic state: one just need to specify the ontic state of toy bit 1, and then the ontic state of toy bit 2. We usually represent a pair of toy bits by a 4x4 box. For example, for a toy bit whose ontic state is known to be in the left half, and another whose ontic state is known to be in the right half, the epistemic state of the combined system is this:
+
+<center>
+<img src="/images/psi-epi/product-state.jpeg" alt="a product state" width="600"/>
+</center>
+
+It turns out that this epistemic state achieves the maximal amount of knowledge allowed on a pair of toy bits---narrowing the ontic state down to four possibilities. In this case, it corresponds to knowing one bit of information about each toy bit. Interestingly, there is a different class of epistemic states that also attain maximal knowledge, such as this one below.
+
+<center>
+<img src="/images/psi-epi/phi-plus.jpeg" alt="the Phi+ Bell state" width="150"/>
+</center>
+
+For this epistemic state, we are completely uncertain about the ontic state of either toy bit---the marginal distribution on each toy bit spans all four ontic state. However, we know that the ontic states of the two bits are *perfectly correlated*. This is analogous to an entangled state, whereas the epistemic state in the first example is analogous to a product state.
+
+Indeed, we can now reproduce the phenomenon of steering with this epistemic state.
+
+<center>
+<img src="/images/psi-epi/steering.jpeg" alt="steering in the toy model" width="850"/>
+</center>
+
+### What the toy model tells us
+
 Now, this toy theory is distinctively *not* the same as quantum theory. Roughly speaking, while quantum theory corresponds to the whole Bloch ball (i.e. surface + interior), the toy theory only corresponds to the octahedron formed by connecting the six labeled points on the Bloch sphere, called the *stabilizer subtheory* of quantum theory. [^stab] But the toy theory comes extremely close to quantum theory in the sense that it contains a long list of phenomena that feature in quantum theory that are normally considered nonclassical, while failing to reproduce only a few quantum phenomena. It essentially sorts quantum phenomenology into two buckets, by the following table:
 
 [^stab]: This is technically a little bit wrong. It turns out that the theory of a toy bit is subtly different from the stabilizer subtheory of a qubit, but [Catani and Browne](https://iopscience.iop.org/article/10.1088/1367-2630/aa781c/pdf) has shown that the correspondence is exact for systems of all *odd* dimensions. This has to do with the fact that the qubit stabilizer subtheory is actually *contextual*. The toy theory is a noncontextual ontological model, so it cannot possibly reproduce all of the qubit stabilizer subtheory. Contextuality is also on the list of the topics I have planned for the next few blog posts, so stay tuned if you are interested in this point!
+
+This is essentially all one needs to define Spekkens' toy model. As it turns out, this is also all one needs to reproduce a large part of quantum theory. 
 
 | appears in toy theory            | does not appear in toy theory          |
 | :------------------------------: | :------------------------------------: |
@@ -166,8 +199,7 @@ Now, this toy theory is distinctively *not* the same as quantum theory. Roughly 
 | teleportation                    |                                        |
 | and some more ...                |                                        |
 
-For example, one can already see that the two example measurements discussed above don't commute: doing the left measurement first deterministically yields outcome 1, whereas if it is done after the right measurement, both outcomes are 50-50.
-It is also clear that wavefunction collapse, which is a truly pretty problematic process if one thinks the wavefunction is ontic, is nothing more than the epistemic update upon learning new information after a measurement. I won't be going into the details of how any other phenomenon arises in the toy theory here in this post; if you are curious about a particular phenomenon on this list, you can find the discussion in Spekkens' original [paper](https://arxiv.org/abs/quant-ph/0401052).
+I won't be going into the details of how any other phenomenon arises in the toy theory here in this post; if you are curious about a particular phenomenon on this list, you can find the discussion in Spekkens' original [paper](https://arxiv.org/abs/quant-ph/0401052).
 
 There are many reasons why I find the toy theory so exciting. For one, it clarifies that there are at least two varieties of nonclassical phenomena: those that arise in a classical theory with an epistemic restriction, and those that cannot be reproduced in such a theory. This provides us with a simple method to assess the nonclassicality of any seemingly strange phenomenology: is it reproducible in the toy theory or not? In other words, we now have a principled answer to the question of "what is so weird about quantum mechanics?" 
 Instead of resorting to personal wisdom such as the well-known [Feynman quote](https://www.feynmanlectures.caltech.edu/III_01.html) that interference phenomena "contain the _only_ mystery [of quantum mechanics]" [^interference], we now know that nonlocality and contextuality are the true mysteries of quantum mechanics. To crack open the strange case of quantum theory, we must focus our effort on understanding those.
