@@ -207,7 +207,9 @@ The answer that Spekkens' toy theory would give is, unsurprisingly, that this is
 <img src="/images/psi-epi/toy-bell-basis.jpeg" alt="toy bell basis measurement" width="150"/>
 </center>
 
-She then texts Bob the outcome of her measurement (1, 2, 3, or 4), and upon receiving Alice's text, Bob now performs one of four permutations on the ontic states of his toy bit as pictured below.
+It is clear that conceptually, this is the measurement that reveals the *relationship* between two toy bits---outcome 1 means that the two toy bits are in the same ontic state, and outcome 4 means that the two toy bits are in "opposite" ontic state, where the opposite of top left is bottom right, and so on. (If this is not clear to you, refer back to the labels of what each row and column corresponds to in the 4x4 box a few figures back.)
+
+So Alice learns the precise relationship between her two toy bits, and then texts Bob the outcome of her measurement (1, 2, 3, or 4), and upon receiving Alice's text, Bob now performs one of four permutations on the ontic states of his toy bit as pictured below.
 
 <center>
 <img src="/images/psi-epi/teleportation-toy.jpeg" alt="toy quantum teleportation" width="630"/>
@@ -215,7 +217,7 @@ She then texts Bob the outcome of her measurement (1, 2, 3, or 4), and upon rece
 
 Conceptually, it is not too hard to explain why this would work. Alice and Bob start off by sharing a pair of toy bits, and while they do not know anything about their individual ontic state, they know that they are in the *same* ontic state. Then, Alice performs a measurement to figure out the relationship between the ontic state of the toy bit that she is teleporting, and that of her half of the entangled toy bit pair. Say that she gets outcome 1. That would mean that she now knows that the toy bit to be teleported is in the same ontic state as her half of the entangled pair, and hence also the same ontic state as Bob's half. Now, since quantum states are states of knowledge, teleporation is a task where the goal is to *make one's knowledge about one system be applicable to another system*. If Alice tells Bob that she got outcome 1, then Bob would know that he doesn't need to do anything, and the state of knowledge on Alice's original toy bit is already applicable to Bob's toy bit. Similarly, if Alice gets outcome 2, then Bob knows that in order to get his toy bit to be in the same ontic state as Alice's original toy bit, he needs to perform the permutation that swaps his toy bit left and right. After the permutation, Alice's (or someone else's, since Alice does not necessarily know the state of the toy bit that she is teleporting) original description would now work for Bob's toy bit.
 
-Now, this protocol is still somewhat surprising, because there are six allowed epistemic states on a toy bit (excluding the one of complete ignorance), and still only two bits need to be communicated for Alice to teleport her toy bit. $\log_26$ is still greater than 2, albeit not infinite. Nonetheless, since the nature of teleportation is not actually transporting anything in reality, and is just about transferring the applicability of some knowledge, it is not very surprising that it requires less communication than is naively expected.
+At the same time, this protocol retains the flavor of surprise in teleportation, because there are six allowed epistemic states on a toy bit (excluding the one of complete ignorance), and still only two bits need to be communicated for Alice to teleport her toy bit. $\log_26$ is still greater than 2, albeit not infinite. Nonetheless, since the nature of teleportation is not actually transporting anything in reality, and is just about transferring the applicability of some knowledge, it is not *that* surprising that it requires less communication than is naively expected.
 
 
 ### What the toy model tells us
