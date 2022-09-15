@@ -22,11 +22,15 @@ publishDir = "docs"
   favicon = "/icon/stabilizer3.jpeg"
   about = """
 Hi! I'm **Haoxing**. 
-I'm a PhD student in theoretical physics at the University of California, Berkeley.
-My current research is at the intersection of machine learning and physics, with support from the amazing [Nachman group](http://bnachman.web.cern.ch/bnachman/index.html).
-Prior to Berkeley, I was fortunate to be part of the [Perimeter Scholars International](https://perimeterinstitute.ca/psi-masters-program) program, and studied at [Harvey Mudd College](https://www.hmc.edu).
+I'm finishing up a master's in physics at UC Berkeley.
+Nowadays, I think a lot about the [best ways to do good](https://www.effectivealtruism.org/), and I'm passionate about helping make sure that the artificial intelligence we develop is safe and beneficial.
+Most recently, I participated in the second iteration of [MLAB](https://forum.effectivealtruism.org/posts/vvocfhQ7bcBR4FLBx/apply-to-the-second-ml-for-alignment-bootcamp-mlab-2-in), and did a [project](https://github.com/haoxing-du/facts-in-llms) looking into how factual knowledge is represented in large language models.
 
-Although I'm no longer pursuing a career in quantum foundations, I remain passionate about the field, and think that the important, recent ideas in quantum foundations are not being effectively communicated to a wider audience.
+While at Berkeley, I did research in the intersection of machine learning and physics in the amazing [Nachman group](http://bnachman.web.cern.ch/bnachman/index.html).
+Prior to Berkeley, I was fortunate to be part of the [Perimeter Scholars International](https://perimeterinstitute.ca/psi-masters-program) program, and studied at [Harvey Mudd College](https://www.hmc.edu).
+ 
+In a past life, I thought a lot about the foundations of quantum theory.
+Although I'm no longer pursuing a career in quantum foundations, I remain passionate about the field, and think that many important, recent ideas in quantum foundations are not being effectively communicated to a wider audience.
 I hope this blog helps bridge that gap, and hope that my younger self from undergraduate years would have been inspired if she were to stumble upon such a blog.
 
 """

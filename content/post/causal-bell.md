@@ -1,6 +1,6 @@
 ---
 title:  Understanding nonlocality via causality
-date: 2022-07-30
+date: 2025-07-30
 tags: ["Bell", "nonlocality", "causality"]
 mathjax: true
 ---
