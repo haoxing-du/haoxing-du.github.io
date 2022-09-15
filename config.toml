@@ -41,3 +41,8 @@ I hope this blog helps bridge that gap, and hope that my younger self from under
       name = "Google Scholar"
       href = "https://scholar.google.com/citations?user=teOq000AAAAJ&hl=en"
       smart_email_link = false
+
+    [[params.links.link]]
+      name = "Github"
+      href = "https://www.github.com/haoxing-du"
+      smart_email_link = false
