@@ -23,7 +23,7 @@ publishDir = "docs"
   about = """
 Hi! I'm **Haoxing**. 
 I'm finishing up a master's in physics at UC Berkeley.
-Nowadays, I think a lot about the [best ways to do good](https://www.effectivealtruism.org/), and I'm passionate about helping make sure that the artificial intelligence we develop is safe and beneficial.
+Nowadays, I think a lot about the [best ways to do good](https://80000hours.org/podcast/effective-altruism-an-introduction/), and I'm passionate about helping make sure that the artificial intelligence we develop is safe and beneficial.
 Most recently, I participated in the second iteration of [MLAB](https://forum.effectivealtruism.org/posts/vvocfhQ7bcBR4FLBx/apply-to-the-second-ml-for-alignment-bootcamp-mlab-2-in), and did a [project](https://github.com/haoxing-du/facts-in-llms) looking into how factual knowledge is represented in large language models.
 
 While at Berkeley, I did research in the intersection of machine learning and physics in the amazing [Nachman group](http://bnachman.web.cern.ch/bnachman/index.html).
