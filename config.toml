@@ -22,10 +22,13 @@ publishDir = "docs"
   favicon = "/icon/stabilizer3.jpeg"
   about = """
 Hi! I'm **Haoxing**. 
-I'm finishing up a master's in physics at UC Berkeley.
-Nowadays, I think a lot about the [best ways to do good](https://80000hours.org/podcast/effective-altruism-an-introduction/), and I'm passionate about helping make sure that the artificial intelligence we develop is safe and beneficial. I'm doing some research on neural network interpretability at [Redwood Research](https://www.redwoodresearch.org/). Check out this [website](https://modelbehavior.ngrok.io/) I made for playing with GPT-2 and [finding algorithmic behaviors](https://www.lesswrong.com/posts/LkBmAGJgZX2tbwGKg/help-out-redwood-research-s-interpretability-team-by-finding) in it.
+I think a lot about the [best ways to do good](https://80000hours.org/podcast/effective-altruism-an-introduction/), and I'm passionate about helping make sure that the artificial intelligence we develop is safe and beneficial. 
+Currently, I work on evaluating the capabilities of language models with the [Evals team](https://evals.alignment.org) at the [Alignment Research Center](https://alignment.org). 
+Before this I did some research on neural network interpretability at [Redwood Research](https://www.redwoodresearch.org/). 
+Check out the work I did on [interpreting Leela Zero](https://www.lesswrong.com/posts/FF8i6SLfKb4g7C4EL/inside-the-mind-of-a-superhuman-go-model-how-does-leela-zero-2), a superhuman Go-playing neural network.
 
-While at Berkeley, I did research in the intersection of machine learning and physics in the amazing [Nachman group](http://bnachman.web.cern.ch/bnachman/index.html).
+Before getting involved in AI safety I spent some years thinking about physics. 
+At Berkeley, I did research in the intersection of machine learning and physics in the amazing [Nachman group](http://bnachman.web.cern.ch/bnachman/index.html).
 Prior to Berkeley, I was fortunate to be part of the [Perimeter Scholars International](https://perimeterinstitute.ca/psi-masters-program) program, and studied at [Harvey Mudd College](https://www.hmc.edu).
  
 In a past life, I thought a lot about the foundations of quantum theory.
