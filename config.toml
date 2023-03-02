@@ -49,6 +49,11 @@ I hope this blog helps bridge that gap, and hope that my younger self from under
       smart_email_link = false
 
     [[params.links.link]]
-      name = "Github"
+      name = "GitHub"
       href = "https://www.github.com/haoxing-du"
+      smart_email_link = false
+    
+    [[params.links.link]]
+      name = "Twitter"
+      href = "https://twitter.com/haoxingdu"
       smart_email_link = false
