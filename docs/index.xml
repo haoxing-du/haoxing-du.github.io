@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Haoxing Du｜杜浩星</title>
-    <link>http://localhost:1313/</link>
+    <link>https://www.haoxingdu.com/</link>
     <description>Recent content on Haoxing Du｜杜浩星</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 07 Jun 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.haoxingdu.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Is the quantum state a state of knowledge?</title>
-      <link>http://localhost:1313/post/psi-epistemic/</link>
+      <link>https://www.haoxingdu.com/post/psi-epistemic/</link>
       <pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/psi-epistemic/</guid>
+      <guid>https://www.haoxingdu.com/post/psi-epistemic/</guid>
       <description>A category mistake On the early morning of September 14, 1822, a young Frenchman named Jean-Francois Champollion was running through the streets of Paris.</description>
     </item>
     <item>
       <title>Why I am not an Everettian</title>
-      <link>http://localhost:1313/post/mw/</link>
+      <link>https://www.haoxingdu.com/post/mw/</link>
       <pubDate>Tue, 22 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/mw/</guid>
+      <guid>https://www.haoxingdu.com/post/mw/</guid>
       <description>The many worlds interpretation seems to come up on top as the favored quantum interpretation among my friends.</description>
     </item>
     <item>
       <title>Contact</title>
-      <link>http://localhost:1313/contact/</link>
+      <link>https://www.haoxingdu.com/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/contact/</guid>
+      <guid>https://www.haoxingdu.com/contact/</guid>
       <description>You can reach me by Email at haoxingdu[at]gmail.</description>
     </item>
   </channel>

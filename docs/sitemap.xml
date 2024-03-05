@@ -2,32 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://www.haoxingdu.com/</loc>
     <lastmod>2025-07-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/</loc>
+    <loc>https://www.haoxingdu.com/post/</loc>
     <lastmod>2025-07-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/psi-epistemic/</loc>
+    <loc>https://www.haoxingdu.com/post/psi-epistemic/</loc>
     <lastmod>2022-06-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/psi-epistemic/</loc>
+    <loc>https://www.haoxingdu.com/tags/psi-epistemic/</loc>
     <lastmod>2022-06-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://www.haoxingdu.com/tags/</loc>
     <lastmod>2022-06-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/interpretations-of-quantum-theory/</loc>
+    <loc>https://www.haoxingdu.com/tags/interpretations-of-quantum-theory/</loc>
     <lastmod>2022-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/many-worlds/</loc>
+    <loc>https://www.haoxingdu.com/tags/many-worlds/</loc>
     <lastmod>2022-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/mw/</loc>
+    <loc>https://www.haoxingdu.com/post/mw/</loc>
     <lastmod>2022-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://www.haoxingdu.com/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/contact/</loc>
+    <loc>https://www.haoxingdu.com/contact/</loc>
   </url>
 </urlset>
