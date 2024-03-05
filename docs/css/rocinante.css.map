@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "rocinante.css",
-	"sourceRoot": "/Users/haoxingdu/haoxing-du.github.io",
+	"sourceRoot": "/Users/haoxing/haoxing-du.github.io",
 	"sources": [
 		"themes/rocinante/assets/css/rocinante.scss",
 		"themes/rocinante/assets/css/includes.scss"
