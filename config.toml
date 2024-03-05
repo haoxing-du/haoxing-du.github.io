@@ -13,9 +13,6 @@ publishDir = "docs"
   [markup.goldmark.renderer]
     unsafe= true
 
-[author]
-  name = "Haoxing Du"
-
 [params]
   mainSections = ["post"]
   email = "haoxingdu@gmail.com"
