@@ -23,7 +23,7 @@ publishDir = "docs"
   about = """
 Hi! I'm **Haoxing**.
 I am a [proud](https://www.astralcodexten.com/p/in-continued-defense-of-effective) [effective altruist](https://80000hours.org/podcast/effective-altruism-an-introduction/), and I'm passionate about helping make sure that the artificial intelligence we develop is safe and beneficial.
-Currently, I work on evaluating large language models for dangerous capabilities at [ARC Evals](https://evals.alignment.org).
+Currently, I work on evaluating large language models for dangerous capabilities at [METR](https://metr.org).
 Before this I did some research on neural network interpretability at [Redwood Research](https://www.redwoodresearch.org/). 
 Check out the work I did on [interpreting Leela Zero](https://www.lesswrong.com/posts/FF8i6SLfKb4g7C4EL/inside-the-mind-of-a-superhuman-go-model-how-does-leela-zero-2), a superhuman Go-playing neural network!
 
