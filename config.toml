@@ -19,8 +19,8 @@ publishDir = "docs"
   favicon = "/icon/stabilizer3.jpeg"
   about = """
 Hi! I'm **Haoxing**.
-I am a [proud](https://www.astralcodexten.com/p/in-continued-defense-of-effective) [effective altruist](https://80000hours.org/podcast/effective-altruism-an-introduction/), and I'm passionate about helping make sure that the artificial intelligence we develop is safe and beneficial.
-I currently work on AI-based weather forecasting at [WindBorne Systems](https://windbornesystems.com/).
+I am a [proud](https://www.astralcodexten.com/p/in-continued-defense-of-effective) [effective altruist](https://80000hours.org/podcast/effective-altruism-an-introduction/) and I work in AI.
+I currently work on AI-based weather forecasting at [WindBorne](https://windbornesystems.com/).
 We have pretty cool [balloons](https://windbornesystems.com/blog/how-windbornes-self-flying-weather-balloons-navigate-the-sky-to-sense-the-globe) too!
 Previously, I worked on evaluating large language models for dangerous capabilities at [METR](https://metr.org), and did some research on neural network interpretability at [Redwood Research](https://www.redwoodresearch.org/). 
 Check out the work I did on [interpreting Leela Zero](https://www.lesswrong.com/posts/FF8i6SLfKb4g7C4EL/inside-the-mind-of-a-superhuman-go-model-how-does-leela-zero-2), a superhuman Go-playing neural network!
