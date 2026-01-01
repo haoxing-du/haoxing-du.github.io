@@ -1,8 +1,9 @@
 ---
 title:  Understanding nonlocality via causality
-date: 2025-07-30
+date: 2035-07-30
 tags: ["Bell", "nonlocality", "causality"]
 mathjax: true
+draft: true
 ---
 
 When I started drafting this blog post a few months ago, I planned for a different intro, one about a causality and quantum physics workshop that I attended in Berkeley. But as I continued to procrastinate on this draft, I was handed a more relevant intro strategy straight from the Nobel committee: The 2022 Nobel Prize in Physics was awarded to John Clauser, Alain Aspect, and Anton Zeillinger, "for experiments with entangled photons, establishing the violation of Bell inequalities and pioneering quantum information science". Since then, a friend has complained to me directly that she couldn't find any good popular science introduction to Bell's inequality. While I doubt that's true, I couldn't see a better motivation for me to finally buckle down and get this post done.

@@ -5,6 +5,9 @@ theme = "rocinante"
 paginate = 3
 summaryLength = 0
 publishDir = "docs"
+buildDrafts = false
+buildFuture = false
+buildExpired = false
 
 [markup]
   [markup.highlight]

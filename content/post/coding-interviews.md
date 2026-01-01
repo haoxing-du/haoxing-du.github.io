@@ -1,8 +1,9 @@
 ---
 title:  Coding interview prep
-date: 2025-03-04
+date: 2035-03-04
 tags: []
 mathjax: true
+draft: true
 ---
 
 I’m needing to study for coding interviews, and am not feeling a whole lot of motivation for doing so. I thought it might help to write down notes as I do so; I sure find it a lot more motivating!
