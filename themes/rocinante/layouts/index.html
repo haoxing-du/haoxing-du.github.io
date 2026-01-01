@@ -3,6 +3,7 @@
     {{ .Scratch.Set "pagenumber" .Paginator.PageNumber }}
     {{ if eq .Paginator.PageNumber 1 }}
         {{- partial "about.html" . -}}
+        {{- partial "last_updated.html" . -}}
     {{ else }}
         <h3 class="inline current-page">Page {{.Paginator.PageNumber}}</h3>
     {{ end }}

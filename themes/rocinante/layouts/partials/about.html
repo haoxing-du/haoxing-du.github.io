@@ -1,4 +1,15 @@
-{{ .Site.Params.about | .RenderString }}
+{{ $photo := .Site.Params.photo }}
+{{ $about := .Site.Params.about }}
+{{ .Scratch.Set "aboutText" $about }}
+{{ if and $photo $about }}
+  {{ if in $about "**Haoxing**" }}
+    {{ .Scratch.Set "aboutText" (replace $about "**Haoxing**" (printf "[**Haoxing**](%s)" $photo)) }}
+  {{ else if in $about "Haoxing" }}
+    {{ .Scratch.Set "aboutText" (replace $about "Haoxing" (printf "[Haoxing](%s)" $photo)) }}
+  {{ end }}
+{{ end }}
+
+{{ .Scratch.Get "aboutText" | .RenderString }}
 
 {{ range $links := .Site.Params.links }}
   <p class="horizontal-links">
