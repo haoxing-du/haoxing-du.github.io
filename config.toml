@@ -5,9 +5,13 @@ theme = "rocinante"
 paginate = 3
 summaryLength = 0
 publishDir = "docs"
+enableGitInfo = true
 buildDrafts = false
 buildFuture = false
 buildExpired = false
+
+[frontmatter]
+  lastmod = [":git", "lastmod", "date"]
 
 [markup]
   [markup.highlight]
@@ -18,21 +22,26 @@ buildExpired = false
 
 [params]
   mainSections = ["post"]
+  photo = "/images/me.jpg"
+  photoAlt = "Photo of me"
   email = "haoxingdu@gmail.com"
   favicon = "/icon/stabilizer3.jpeg"
   about = """
 Hi! I'm **Haoxing**.
-I am a [proud](https://www.astralcodexten.com/p/in-continued-defense-of-effective) [effective altruist](https://80000hours.org/podcast/effective-altruism-an-introduction/) and I work in AI.
-I currently work on AI-based weather forecasting at [WindBorne](https://windbornesystems.com/).
-We have pretty cool [balloons](https://windbornesystems.com/blog/how-windbornes-self-flying-weather-balloons-navigate-the-sky-to-sense-the-globe) too!
-Previously, I worked on evaluating large language models for dangerous capabilities at [METR](https://metr.org), and did some research on neural network interpretability at [Redwood Research](https://www.redwoodresearch.org/). 
-Check out the work I did on [interpreting Leela Zero](https://www.lesswrong.com/posts/FF8i6SLfKb4g7C4EL/inside-the-mind-of-a-superhuman-go-model-how-does-leela-zero-2), a superhuman Go-playing neural network!
+I am a [proud](https://www.astralcodexten.com/p/in-continued-defense-of-effective) [effective altruist](https://80000hours.org/podcast/effective-altruism-an-introduction/) working in AI.
+I currently work on predicting the weather with AI at [WindBorne](https://windbornesystems.com/), where I also get to [play](https://windbornesystems.com/blog/flying-into-the-eye) with [balloons](https://windbornesystems.com/blog/how-windbornes-self-flying-weather-balloons-navigate-the-sky-to-sense-the-globe).
+Previously, I worked on evaluating large language models for dangerous capabilities at [METR](https://metr.org), where we poked at the first AI agents before the term "AI agent" was invented. 
+I also did some [research](https://www.lesswrong.com/posts/FF8i6SLfKb4g7C4EL/inside-the-mind-of-a-superhuman-go-model-how-does-leela-zero-2) on neural network interpretability at [Redwood Research](https://www.redwoodresearch.org/).
 
-Before getting into AI I spent some years thinking about physics.
+Before getting into AI I studied theoretical physics.
 At Berkeley, I did research in the intersection of machine learning and physics in the amazing [Nachman group](https://nachmangroup.github.io/).
-Prior to Berkeley, I was fortunate to be part of the [Perimeter Scholars International](https://perimeterinstitute.ca/psi-masters-program) program, and studied at [Harvey Mudd College](https://www.hmc.edu).
+Prior to Berkeley, I was fortunate to be part of the [Perimeter Scholars International](https://perimeterinstitute.ca/psi-masters-program) program, and had the privilege of spending the best college years possible at [Harvey Mudd College](https://www.hmc.edu).
 
-When I'm not thinking about technical topics, I like to read, play video games, make music, and [fly](https://www.xcontest.org/world/en/pilots/detail:haoxing) my paraglider.
+When I'm not thinking about technical topics, I like to read, play video games, make music, [fly](https://www.xcontest.org/world/en/pilots/detail:haoxing) my paraglider, and make very slow progress hiking the [Bay Area Ridge Trail](https://ridgetrail.org/).
+
+I am the happiest wife to [Kasey Markel](https://www.kaseymarkel.com/), and we live in the San Francisco Bay Area.
+We have signed the [10% pledge 🔸](https://www.givingwhatwecan.org/pledge).
+If you are reading this, please consider doing the same!
  
 In a past life, I thought a lot about the foundations of quantum theory.
 Although I'm no longer pursuing a career in quantum foundations, I remain passionate about the field, and think that many important, recent ideas in quantum foundations are not being effectively communicated to a wider audience.
