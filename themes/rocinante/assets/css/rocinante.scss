@@ -1,17 +1,26 @@
 @import 'includes';
 
-/* https://markdotto.com/2018/02/07/github-system-fonts/ */
-$fonts: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$serif: "Source Serif 4", "Klee One", Georgia, Cambria, "Times New Roman", Times, serif;
+$sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+$text: #241f29;
+$muted: #857e8c;
+$rule: #ece8ef;
+$accent: #6e5a78;
+$accent-hover: #907a9c;
 
 body {
-  font-family: $fonts;
-  color: #333;
+  font-family: $serif;
+  color: $text;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.55;
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 p {
-  margin: 1.25em 0;
+  margin: 1em 0;
 }
 
 em, i {
@@ -23,9 +32,12 @@ strong, b {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-  margin: 1.5em 0 1em 0;
-  line-height: 1em;
+  font-family: $serif;
+  font-weight: 700;
+  letter-spacing: -0.005em;
+  margin: 1.8em 0 0.8em 0;
+  line-height: 1.25;
+  color: #1c1b1a;
 }
 
 h1 {
@@ -54,11 +66,14 @@ h4, h5, h6 {
 }
 
 a {
-  color: #2200CC;
-  transition: color 0.1s ease;
+  color: $accent;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
 
   &:hover {
-    color: #5544FF;
+    color: $accent-hover;
+    border-bottom-color: rgba(110, 90, 120, 0.5);
   }
 }
 
@@ -82,9 +97,15 @@ dd {
 }
 
 hr {
-  margin: 2em 0;
+  margin: 2.5em auto;
   border: 0;
-  border-top: 2px dotted #aaa;
+  width: 6em;
+  text-align: center;
+  &:after {
+    content: "* * *";
+    letter-spacing: 0.6em;
+    color: $muted;
+  }
 }
 
 pre, code {
@@ -165,18 +186,17 @@ main {
 }
 
 header h2 {
-  margin: 1em;
+  font-family: $serif;
+  font-weight: 600;
+  font-size: 1.15em;
+  margin: 2em 1em 1.5em;
   a {
     text-decoration: none;
     border: none;
-    color: #77f !important;
+    color: $text !important;
 
     &:hover {
-      color: #f77 !important;
-    }
-
-    &:active {
-      color: #2a2 !important;
+      color: $accent !important;
     }
   }
 }
@@ -198,20 +218,26 @@ header h2 {
 
 .title-group {
   .title h1 {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.4em;
+    font-size: 2em;
+    letter-spacing: -0.015em;
   }
   .date h5 {
-    color: #888;
+    color: $muted;
     margin: 0;
+    font-family: $sans;
   }
-  margin-bottom: 1.5em;
+  margin-bottom: 2em;
 }
 
 footer {
-  margin-top: 3em;
+  margin-top: 4em;
+  font-size: 0.92em;
+  color: $muted;
   .content-container {
-    background: #eee;
-    padding: 2em 0;
+    background: transparent;
+    border-top: 1px solid $rule;
+    padding: 2em 0 3em;
     .content {
       max-width: 740px;
       padding: 0 20px;
@@ -224,13 +250,17 @@ footer {
   width: 100%;
   margin-top: 0;
   margin-bottom: 0.25em;
+  font-family: $serif;
   a {
-    border-right: 2px solid #ccc;
-    padding-right: 0.5em;
-    margin-right: 0.5em;
+    padding-right: 0.4em;
+    margin-right: 0.9em;
+    border-bottom: none;
+    &:hover {
+      border-bottom: 1px solid $accent-hover;
+    }
   }
   a:last-child {
-    border: none;
+    margin-right: 0;
   }
   &:last-child {
     margin-bottom: 1.25em;
@@ -239,20 +269,59 @@ footer {
 
 .post-list {
   h1 a {
-    color: #333;
+    color: $text;
     text-decoration: none;
     border: none;
 
     &:hover {
-      color: #5544FF;
+      color: $accent;
     }
   }
   .read-more {
     margin-bottom: 1.25em;
   }
 
-  padding-bottom: 1em;
-  border-bottom: 1px solid #ccc;
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid $rule;
+}
+
+.about-photo {
+  display: block;
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 0 1.5em;
+}
+
+.post-index {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2em;
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0.5em 0;
+    border-bottom: 1px solid $rule;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1em;
+  }
+  li:last-child {
+    border-bottom: none;
+  }
+  a {
+    border-bottom: none;
+    &:hover {
+      color: $accent-hover;
+    }
+  }
+  .date {
+    color: $muted;
+    font-size: 0.88em;
+    white-space: nowrap;
+  }
 }
 
 .tags {

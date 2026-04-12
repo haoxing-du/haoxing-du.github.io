@@ -1,1 +1,4 @@
 .hugo_build.lock
+.DS_Store
+static/fonts-preview.html
+docs/fonts-preview.html

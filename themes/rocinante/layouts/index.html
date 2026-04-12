@@ -1,14 +1,20 @@
 {{ define "main" }}
-    {{ $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
-    {{ .Scratch.Set "pagenumber" .Paginator.PageNumber }}
-    {{ if eq .Paginator.PageNumber 1 }}
-        {{- partial "about.html" . -}}
-        {{- partial "last_updated.html" . -}}
-    {{ else }}
-        <h3 class="inline current-page">Page {{.Paginator.PageNumber}}</h3>
-    {{ end }}
+    {{- partial "about.html" . -}}
+    {{- partial "last_updated.html" . -}}
     <hr>
 
-    {{- partial "listcontent.html" . -}}
-    {{- partial "pagination.html" . -}}
+    <ul class="post-index">
+    {{ range (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+        <li>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <span class="date">
+            {{ if eq .Type "photos" }}
+                {{ .Params.display_date }}{{ with .Params.location }} · {{ . }}{{ end }}
+            {{ else }}
+                {{ .Params.date.Format "Jan 02, 2006" }}
+            {{ end }}
+            </span>
+        </li>
+    {{ end }}
+    </ul>
 {{ end }}
