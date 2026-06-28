@@ -180,7 +180,7 @@ Famously, convolutional neural networks (CNNs) are prone to [checkerboard artifa
 Results: Ladder breaker detection
 =================================
 
-*REMIX residents Naomi Bashkansky and Oliver Hayman contributed to this part of the project.*
+*REMIX residents Naomi Bashkansky and Oliver H contributed to this part of the project.*
 
 Equivariance/Symmetry
 ---------------------
@@ -250,7 +250,7 @@ Below we list some future directions for this work:
 Acknowledgement
 ===============
 
-This work was done during my internship at Redwood Research. Thanks in particular to: Buck Shlegeris, for encouraging me to pursue a Go interpretability project; Peter Schmidt-Nielsen, for teaching me Go and suggesting ladders as a behavior to study; Jesse Liptrap, for suggesting ideas for algorithmic tasks in Go; Arthur Conmy for the idea of residualification; Lawrence Chan, Arthur Conmy, Jeremy Côté, Xander Davies, Shiyue Li, Chris MacLeod, Peter Schmidt-Nielsen, Buck Shlegeris, and Alexandre Variengien for giving feedback on the draft. Many thanks also to REMIX residents Naomi Bashkansky, Hans Gundlach, Oliver Hayman, and Alok Singh for discussions and being great members of the Go Pod!
+This work was done during my internship at Redwood Research. Thanks in particular to: Buck Shlegeris, for encouraging me to pursue a Go interpretability project; Peter Schmidt-Nielsen, for teaching me Go and suggesting ladders as a behavior to study; Jesse Liptrap, for suggesting ideas for algorithmic tasks in Go; Arthur Conmy for the idea of residualification; Lawrence Chan, Arthur Conmy, Jeremy Côté, Xander Davies, Shiyue Li, Chris MacLeod, Peter Schmidt-Nielsen, Buck Shlegeris, and Alexandre Variengien for giving feedback on the draft. Many thanks also to REMIX residents Naomi Bashkansky, Hans Gundlach, Oliver H, and Alok Singh for discussions and being great members of the Go Pod!
 
 Citation information
 ====================

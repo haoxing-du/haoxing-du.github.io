@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>interpretability on Haoxing Du｜杜浩星</title><link>https://www.haoxingdu.com/tags/interpretability/</link><description>Recent content in interpretability on Haoxing Du｜杜浩星</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 01 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.haoxingdu.com/tags/interpretability/index.xml" rel="self" type="application/rss+xml"/><item><title>Inside the Mind of a Superhuman Go Model: How Does Leela Zero Read Ladders?</title><link>https://www.haoxingdu.com/post/leela-zero-ladders/</link><pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate><guid>https://www.haoxingdu.com/post/leela-zero-ladders/</guid><description>Originally posted on LessWrong and the AI Alignment Forum in March 2023.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>interpretability on Haoxing Du｜杜浩星</title>
+    <link>https://www.haoxingdu.com/tags/interpretability/</link>
+    <description>Recent content in interpretability on Haoxing Du｜杜浩星</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.haoxingdu.com/tags/interpretability/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Inside the Mind of a Superhuman Go Model: How Does Leela Zero Read Ladders?</title>
+      <link>https://www.haoxingdu.com/post/leela-zero-ladders/</link>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.haoxingdu.com/post/leela-zero-ladders/</guid>
+      <description>Originally posted on LessWrong and the AI Alignment Forum in March 2023.</description>
+    </item>
+  </channel>
+</rss>

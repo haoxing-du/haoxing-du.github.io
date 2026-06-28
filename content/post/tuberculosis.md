@@ -22,7 +22,7 @@ We don't get to just look away from the numbers.
 
 ## Henry is not an argument against cost-effectiveness. He *is* the argument.
 
-Much of the book's narrative arc and emotional force comes from the story of one individual, Henry Reider, who survived multi-drug resistant TB in Sierra Leone. And at various points in the book, it feels like Green tries to argue against cost-effectiveness with Henry's story.
+Much of the book's narrative arc and emotional force comes from the story of one individual, [Henry Reider](https://www.youtube.com/@Tuberculosis-l1jSurvivorHenry/videos), who survived multi-drug resistant TB in Sierra Leone. And at various points in the book, it feels like Green tries to argue against cost-effectiveness with Henry's story.
 
 But Henry's story is precisely the reason we do cost-effectiveness analyses. Saving two lives is better than saving one, because the other person you save is Henry too. The purpose of cost-effectiveness isn't to turn real people into abstractions; it's meant to prevent us from—all too easily—deciding that the lives of the children who are not written about in best-selling books matter less. Without it, do we allocate resources based on whose story we happened to hear, whose suffering was made vivid to us?
 
