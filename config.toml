@@ -25,28 +25,29 @@ buildExpired = false
   photo = "/images/me.jpg"
   photoAlt = "Photo of me"
   email = "haoxingdu@gmail.com"
-  favicon = "/icon/stabilizer3.jpeg"
+  favicon = "/icon/favicon.JPG"
+  socialImage = "/icon/favicon.JPG"
   about = """
 Hi! I'm **Haoxing**.
-I am a [proud](https://www.astralcodexten.com/p/in-continued-defense-of-effective) [effective altruist](https://80000hours.org/podcast/effective-altruism-an-introduction/) working in AI.
-I currently work on predicting the weather with AI at [WindBorne](https://windbornesystems.com/), where I also get to [play](https://windbornesystems.com/blog/flying-into-the-eye) with [balloons](https://windbornesystems.com/blog/how-windbornes-self-flying-weather-balloons-navigate-the-sky-to-sense-the-globe).
-Previously, I worked on evaluating large language models for dangerous capabilities at [METR](https://metr.org), where we poked at the first AI agents before the term "AI agent" was invented. 
+I am a [proud](https://www.astralcodexten.com/p/in-continued-defense-of-effective) [effective altruist](https://80000hours.org/podcast/effective-altruism-an-introduction/) trying to help this [whole](https://aisafety.dance/) [AI](https://www.cold-takes.com/most-important-century/) [thing](https://ai-2027.com/) go well.
+I'm currently working on a new project on AI behavior evaluations, incubated at [Surplus](https://surplus.dev/).
+Please get in touch if you'd like to chat about this!
+
+Most recently, I worked on predicting the weather with AI at a balloon startup called [WindBorne](https://windbornesystems.com/).
+Before that, I evaluated AI models for dangerous capabilities at [METR](https://metr.org), where we poked at the first AI agents before the term "AI agent" was invented.
 I also did some [research](https://www.lesswrong.com/posts/FF8i6SLfKb4g7C4EL/inside-the-mind-of-a-superhuman-go-model-how-does-leela-zero-2) on neural network interpretability at [Redwood Research](https://www.redwoodresearch.org/).
 
-Before getting into AI I studied theoretical physics.
-At Berkeley, I did research in the intersection of machine learning and physics in the amazing [Nachman group](https://nachmangroup.github.io/).
+Before AI captured my entire attention I wanted to become a theoretical physicist.
+At Berkeley, I did research at the intersection of machine learning and physics in the amazing [Nachman group](https://nachmangroup.github.io/).
 Prior to Berkeley, I was fortunate to be part of the [Perimeter Scholars International](https://perimeterinstitute.ca/psi-masters-program) program, and had the privilege of spending the best college years possible at [Harvey Mudd College](https://www.hmc.edu).
+If not for AI, I might have spent my career thinking about the foundations of quantum theory.
+A few years ago, I wrote a couple of posts on quantum foundations, hoping to communicate some of my favorite recent advances to a wider audience, which you can find on this site.
 
-When I'm not thinking about technical topics, I like to read, play video games, make music, [fly](https://www.xcontest.org/world/en/pilots/detail:haoxing) my paraglider, and make very slow progress hiking the [Bay Area Ridge Trail](https://ridgetrail.org/).
+When I'm not thinking about the above topics, I like to read, play video games, make music, [fly](https://www.xcontest.org/world/en/pilots/detail:haoxing) my paraglider, and climb extremely casually.
 
-I am the happiest wife to [Kasey Markel](https://www.kaseymarkel.com/), and we live in the San Francisco Bay Area.
-We have signed the [10% pledge 🔸](https://www.givingwhatwecan.org/pledge).
+I'm happily married to [Kasey Markel](https://www.kaseymarkel.com/), and we're moving to San Francisco soon after a few years in East Bay.
+We have signed the [🔸 10% Pledge](https://www.givingwhatwecan.org/pledge).
 If you are reading this, please consider doing the same!
- 
-In a past life, I thought a lot about the foundations of quantum theory.
-Although I'm no longer pursuing a career in quantum foundations, I remain passionate about the field, and think that many important, recent ideas in quantum foundations are not being effectively communicated to a wider audience.
-I hope the essays below help bridge that gap just a little. 
-I also hope that my younger self from undergraduate years would have been inspired if she were to stumble upon these.
 
 """
 
