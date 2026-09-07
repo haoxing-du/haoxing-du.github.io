@@ -3,20 +3,53 @@
 $serif: "Source Serif 4", "Klee One", Georgia, Cambria, "Times New Roman", Times, serif;
 $sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
-$text: #241f29;
-$muted: #857e8c;
-$rule: #ece8ef;
-$accent: #6e5a78;
-$accent-hover: #907a9c;
+// Palette primitives; components use the role tokens below.
+$neutral-0: #ffffff;
+$neutral-50: #f9f9f9;
+$neutral-200: #ece8ef;
+$neutral-600: #666666;
+$neutral-900: #241f29;
+$purple-700: #6e5a78;
+$purple-800: #584860;
+
+$background: $neutral-0;
+$surface: $neutral-50;
+$text: $neutral-900;
+$text-heading: $neutral-900;
+$muted: $neutral-600;
+$rule: $neutral-200;
+$accent: $purple-700;
+$accent-hover: $purple-800;
+$focus: $purple-700;
+$selection-background: $neutral-200;
+$selection-text: $neutral-900;
+
+// A shared reading scale, independent of nested elements.
+$type-caption: 0.875rem;
+$type-body: 1.0625rem;
+$type-heading-small: 1.125rem;
+$type-heading: 1.375rem;
+$type-title: 1.625rem;
+$type-display: 2rem;
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: $selection-background;
+  color: $selection-text;
+}
 
 body {
   font-family: $serif;
   color: $text;
-  font-size: 16px;
-  line-height: 1.55;
-  background: #ffffff;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-size: $type-body;
+  line-height: 1.6;
+  background: $background;
+  font-optical-sizing: auto;
+  overflow-wrap: break-word;
 }
 
 p {
@@ -36,45 +69,60 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   letter-spacing: -0.005em;
   margin: 1.8em 0 0.8em 0;
-  line-height: 1.25;
-  color: #1c1b1a;
+  line-height: 1.2;
+  text-wrap: balance;
+  color: $text-heading;
 }
 
 h1 {
-  font-size: 1.625em;
+  font-size: $type-title;
 }
 h2 {
-  font-size: 1.375em;
+  font-size: $type-heading;
 }
 h3 {
-  font-size: 1.125em;
+  font-size: $type-heading-small;
 }
 h4 {
-  font-size: 1em;
+  font-size: $type-body;
 }
 h5 {
-  font-size: 0.875em;
+  font-size: $type-caption;
 }
 h6 {
-  font-size: 0.75em;
+  font-size: $type-caption;
+  font-weight: 600;
 }
 
 h4, h5, h6 {
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.05em;
   margin-top: 2.5em;
 }
 
 a {
   color: $accent;
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: color 0.15s ease, border-color 0.15s ease;
+  text-decoration-line: underline;
+  text-decoration-color: transparent;
+  text-underline-position: from-font;
+  text-decoration-thickness: from-font;
+  text-underline-offset: 0.15em;
+  text-decoration-skip-ink: auto;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
 
   &:hover {
     color: $accent-hover;
-    border-bottom-color: rgba(110, 90, 120, 0.5);
+    text-decoration-color: currentColor;
   }
+}
+
+a:focus-visible {
+  outline: 2px solid $focus;
+  outline-offset: 3px;
+}
+
+article.content a, main > p:not(.horizontal-links) a, section a {
+  text-decoration-color: currentColor;
 }
 
 ol li {
@@ -113,13 +161,13 @@ pre, code {
   border-radius: 3px;
 }
 code {
-  background: #f9f9f9;
-  font-size: 0.9em;
+  background: $surface;
+  font-size: $type-caption;
   padding: 0.25em 0.5em;
-  color: #9E525A;
+  color: $text;
 }
 pre code {
-  background: #f9f9f9;
+  background: $surface;
   display: block;
   margin: 1em 0;
   padding: 0.75em 1em;
@@ -141,27 +189,27 @@ figcaption {
     margin: 0;
   }
   text-align: center;
-  font-size: 0.9em;
-  color: #666;
+  font-size: $type-caption;
+  color: $muted;
 }
 
 blockquote {
   padding-left: 1.25em;
   padding-right: 1.5em;
-  border-left: .25em solid #eee;
-  color: #666;
+  border-left: .25em solid $rule;
+  color: $muted;
 }
 
 table {
   margin-bottom: 1em;
   width: 100%;
-  border: 1px solid #ddd;
+  border: 1px solid $rule;
 }
 
 td, th {
   vertical-align: middle;
   padding: .25rem .5rem;
-  border: 1px solid #ddd;
+  border: 1px solid $rule;
 }
 
 th {
@@ -169,7 +217,7 @@ th {
 }
 
 tbody tr:nth-child(2n+1) td, tbody tr:nth-child(2n+1) th {
-  background-color: #f8f8f8;
+  background-color: $surface;
 }
 
 sup, sub {
@@ -180,7 +228,7 @@ sup {
 }
 
 main {
-  max-width: 740px;
+  max-width: calc(70ch + 40px);
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -188,15 +236,15 @@ main {
 header h2 {
   font-family: $serif;
   font-weight: 600;
-  font-size: 1.15em;
+  font-size: $type-heading-small;
   margin: 2em 1em 1.5em;
   a {
     text-decoration: none;
     border: none;
-    color: $text !important;
+    color: $accent;
 
     &:hover {
-      color: $accent !important;
+      color: $accent-hover;
     }
   }
 }
@@ -219,7 +267,7 @@ header h2 {
 .title-group {
   .title h1 {
     margin-bottom: 0.4em;
-    font-size: 2em;
+    font-size: $type-display;
     letter-spacing: -0.015em;
   }
   .date h5 {
@@ -232,14 +280,15 @@ header h2 {
 
 footer {
   margin-top: 4em;
-  font-size: 0.92em;
+  font-size: $type-caption;
   color: $muted;
   .content-container {
     background: transparent;
     border-top: 1px solid $rule;
     padding: 2em 0 3em;
     .content {
-      max-width: 740px;
+      max-width: calc(70ch + 40px);
+      font-size: $type-body;
       padding: 0 20px;
       margin: 0 auto;
     }
@@ -252,11 +301,12 @@ footer {
   margin-bottom: 0.25em;
   font-family: $serif;
   a {
+    white-space: nowrap;
     padding-right: 0.4em;
     margin-right: 0.9em;
     border-bottom: none;
     &:hover {
-      border-bottom: 1px solid $accent-hover;
+      text-decoration: underline;
     }
   }
   a:last-child {
@@ -269,12 +319,12 @@ footer {
 
 .post-list {
   h1 a {
-    color: $text;
+    color: $accent;
     text-decoration: none;
     border: none;
 
     &:hover {
-      color: $accent;
+      color: $accent-hover;
     }
   }
   .read-more {
@@ -293,6 +343,7 @@ footer {
   border-radius: 50%;
   margin: 0 0 1.5em;
 }
+
 
 .post-index {
   list-style: none;
@@ -319,22 +370,23 @@ footer {
   }
   .date {
     color: $muted;
-    font-size: 0.88em;
+    font-size: $type-caption;
+    font-variant-numeric: tabular-nums;
     white-space: nowrap;
   }
 }
 
 .tags {
-  font-size: 0.9em;
+  font-size: $type-caption;
   .links {
     display: inline;
     margin-left: 0.5em;
     a {
-      color: #aaa;
+      color: $accent;
       text-decoration: none;
       border-bottom: none;
       &:hover {
-        color: #888;
+        color: $accent-hover;
         text-decoration: underline;
       }
     }
@@ -344,7 +396,7 @@ footer {
 .paginator {
   margin: 2em 0;
   .disabled {
-    color: #aaa;
+    color: $muted;
   }
   .newer {
     float: right;
@@ -353,7 +405,7 @@ footer {
 }
 
 .current-page {
-  color: #aaa;
+  color: $muted;
 }
 
 .album {
@@ -361,8 +413,8 @@ footer {
     display: inline;
   }
   .location {
-    color: #888;
-    border-left: solid 2px #ccc;
+    color: $muted;
+    border-left: solid 2px $rule;
     padding-left: 1em;
     margin-left: 1em;
   }
@@ -381,9 +433,6 @@ footer {
 }
 
 @media (max-width:400px) {
-  body {
-    font-size: 14px;
-  }
   .album .photos {
     grid-template-columns: 1fr;
     a {
@@ -394,8 +443,39 @@ footer {
 }
 
 code.has-jax {
-  -webkit-font-smoothing: antialiased;
   background: inherit !important;
   border: none !important;
   font-size: 100%;
+}
+
+.last-updated {
+  color: $muted;
+  font-family: $sans;
+  font-size: $type-caption;
+  font-variant-numeric: tabular-nums;
+}
+
+.post-list p {
+  text-wrap: pretty;
+}
+
+pre {
+  overflow-x: auto;
+}
+
+@media (max-width: 600px) {
+  .title-group .title h1 {
+    font-size: $type-title;
+    line-height: 1.4;
+  }
+  .post-index li {
+    flex-wrap: wrap;
+    gap: 0.15em 1em;
+  }
+  .post-index a {
+    min-width: 0;
+  }
+  .post-index .date {
+    flex-basis: 100%;
+  }
 }
