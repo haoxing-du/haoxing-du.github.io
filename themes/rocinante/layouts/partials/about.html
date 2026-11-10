@@ -2,6 +2,13 @@
   <img class="about-photo" src="{{ . }}" alt="{{ $.Site.Params.photoAlt | default "Photo" }}">
 {{ end }}
 
+{{ if .IsHome }}
+    <aside class="announcement">
+        I'm doing <a href="https://justwrite.club/">justwrite.club</a> for the month of November, and I have a Substack!
+        <a href="https://haoxingdu.substack.com/">Read it here&nbsp;→</a>
+    </aside>
+{{ end }}
+
 {{ .Site.Params.about | .RenderString }}
 
 {{ range $links := .Site.Params.links }}

@@ -479,3 +479,24 @@ pre {
     flex-basis: 100%;
   }
 }
+
+.announcement {
+  margin: 0 0 1.5rem 0;
+  padding: 0.875rem 1.125rem;
+  background: $surface;
+  border: 1px solid $rule;
+  border-left: 3px solid $accent;
+  border-radius: 6px;
+  font-size: $type-caption * 1.1;
+  line-height: 1.5;
+
+  a {
+    color: $accent;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+
+  a:hover {
+    color: $accent-hover;
+  }
+}
